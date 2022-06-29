@@ -33,6 +33,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             imageDisplay.image = selectedImage
         }
+        
         // go back to our ViewController so the user can SEE the update
         imagePicker.dismiss(animated: true, completion: nil)
     }
